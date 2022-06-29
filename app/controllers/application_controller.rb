@@ -41,9 +41,9 @@ class ApplicationController < Sinatra::Base
   end
 
   patch "/customers/:id" do
-    customer = Customer.find(params[id])
+    customer = Customer.find(params[:id])
     customer.update(
-      address: params[:address]
+      employee_id: params[:employee_id]
     )
   end
 
