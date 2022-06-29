@@ -45,6 +45,7 @@ class ApplicationController < Sinatra::Base
     customer.update(
       employee_id: params[:employee_id]
     )
+    customer.to_json
   end
 
 
